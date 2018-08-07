@@ -21,6 +21,12 @@ body {
 .avenirDemi {
   font-family: 'AvenirNextDemi' , serif; }
 
+@font-face {
+  font-family: AvenirRegular;
+  src: url(../font/AvenirNextLTPro-Regular.otf); }
+.avenirRegular {
+  font-family: 'AvenirRegular' , serif; }
+
 .navbar {
   background-color: transparent !important;
   margin-top: 36px; }
@@ -70,9 +76,9 @@ body {
       line-height: 22px;
       letter-spacing: 2px; }
   #home #box-container {
-    width: 60% !important;
+    width: 62% !important;
     max-width: 80% !important;
-    margin-bottom: 15rem;
+    margin-bottom: 5rem;
     margin-top: -7rem; }
     @media (max-width: 768px) {
       #home #box-container {
@@ -81,15 +87,53 @@ body {
     #home #box-container .small_box {
       height: 180px;
       width: 240px;
-      flex-direction: column;
       box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.24);
       border-radius: 8px;
       background-color: #fff; }
-      @media (max-width: 768px) {
-        #home #box-container .small_box {
-          height: 150px;
-          width: 200px; } }
       #home #box-container .small_box h1 {
         font-size: 36px; }
+
+#clubs {
+  margin-top: 5rem;
+  margin-bottom: 5rem; }
+  #clubs h1 {
+    font-size: 36px; }
+  #clubs .margin {
+    width: 80%; }
+    @media (max-width: 768px) {
+      #clubs .margin {
+        width: 100%; } }
+  #clubs .club_card {
+    height: 400px;
+    width: 240px;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.24);
+    padding: 36px 10px 36px 10px; }
+    #clubs .club_card h4 {
+      font-size: 24px; }
+    #clubs .club_card .top {
+      padding-top: 5rem; }
+
+#projects {
+  padding-top: 5rem;
+  padding-right: 7rem;
+  padding-left: 7rem; }
+  @media (max-width: 768px) {
+    #projects {
+      padding-left: 1rem;
+      padding-right: 1rem; } }
+  #projects h1 {
+    font-size: 36px; }
+  #projects img {
+    border-radius: 12px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.24);
+    width: 100%;
+    height: 350px; }
+    @media (max-width: 768px) {
+      #projects img {
+        height: auto; } }
+  #projects h3 {
+    font-size: 24px; }
 
 /*# sourceMappingURL=style.css.map */
