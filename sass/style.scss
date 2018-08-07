@@ -2,6 +2,11 @@ body {
   margin: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+  *:focus {
+    outline: 0!important;
+}
+.navbar-light .navbar-toggler-icon {
+  background-image: url(../img/icons/menu.svg)!important; }
 }
 @font-face {
   font-family: AvenirNext;
