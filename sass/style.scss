@@ -5,7 +5,13 @@ body {
   background-color: #fff;
   *:focus {
     outline: 0!important;
-}
+  }
+   .fa-chevron-circle-up {
+    color: #757575!important;
+    &:hover {
+      transform: scale(1.2)!important;
+   }
+ }
 .navbar-light .navbar-toggler-icon {
   background-image: url(../img/icons/menu.svg)!important; }
 }
@@ -17,7 +23,7 @@ body {
   }
   @font-face {
   font-family: AvenirNextMedium;
-  src: url(../font/AvenirNextLTPro-MediumCn.otf); }
+  src: url(../font/AvenirNextLTPro-Medium.otf); }
   .avenirMedium {
     font-family: 'AvenirNextMedium' , serif;
   }
@@ -61,8 +67,8 @@ body {
     }
     }
     .btn-default{
-      background: linear-gradient(90deg, var(--c1, #f6d365), var(--c2, #fda085) 51%, var(--c1, #f6d365)) var(--x, 0)/ 200%;
-      color: white;
+      background: linear-gradient(90deg, var(--c1, #f6d365), var(--c2, #fda085) 51%, var(--c1, #f6d365)) var(--x, 0)/ 200%!important;
+      color: white!important;
       box-shadow: 0 0 20px #eee;
       border-radius: 3rem!important;
       border-width: 2px!important;
@@ -72,6 +78,7 @@ body {
       &:hover {
           --x: 100%;
       }
+    
     }
   }
   #home {
@@ -145,6 +152,29 @@ body {
       padding-bottom: 3rem;
       padding-top: 3rem;
     }
+    .box {
+      background: linear-gradient(90deg, var(--c1, #f6d365), var(--c2, #fda085) 51%, var(--c1, #f6d365)) var(--x, 0)/ 200%;
+      transition: 1s;
+      &:hover {
+        --x: 100%; 
+    }
+  }
+    .box1{
+    --c1: #f6d365;
+  --c2: #fda085;
+    }
+    .box2 {
+      --c1: rgba(255,144,120,1);
+      --c2: rgba(255,142,210,1);
+    }
+    .box3{
+      --c1:rgba(70,211,255,1);
+      --c2: rgba(26,251,148,1);
+    }
+    .box4 {
+      --c1: rgba(0,72,212,1);
+      --c2: rgba(209,51,255,1);
+    }
     h1 {
       font-size: 36px;
       @media(max-width: 768px){
@@ -217,9 +247,11 @@ body {
       color: #616161;
       font-size: 20px;
       width: 70%;
+      line-height: 1.618;
       @media(max-width: 768px) {
         width: 90%;
         font-size: 16px;
+        line-height: 1.4;
       }
     }
     .box_medium {
@@ -260,7 +292,7 @@ body {
     }
   }
   #footer {
-    height: 375px;
+    min-height: 375px;
     background-color: rgba(240, 240, 240, 1);
     margin-top: -130px;
     padding-bottom: 80px;
@@ -313,12 +345,13 @@ body {
       width: 90%;
       font-weight: 200;
       padding-bottom: 6rem;
+      line-height: 1.618;
       @media(max-width: 768px) {
       width: 100%;
       border-radius: 8px;
       font-size: 16px;
       text-align: center;
-      line-height: 28px;
+      line-height: 1.4;
       padding-top: 0.5rem;
       padding-bottom: 1rem;
       }

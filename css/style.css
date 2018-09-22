@@ -5,6 +5,10 @@ body {
   background-color: #fff; }
   body *:focus {
     outline: 0 !important; }
+  body .fa-chevron-circle-up {
+    color: #757575 !important; }
+    body .fa-chevron-circle-up:hover {
+      transform: scale(1.2) !important; }
   body .navbar-light .navbar-toggler-icon {
     background-image: url(../img/icons/menu.svg) !important; }
 
@@ -16,7 +20,7 @@ body {
 
 @font-face {
   font-family: AvenirNextMedium;
-  src: url(../font/AvenirNextLTPro-MediumCn.otf); }
+  src: url(../font/AvenirNextLTPro-Medium.otf); }
 .avenirMedium {
   font-family: 'AvenirNextMedium' , serif; }
 
@@ -54,8 +58,8 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
   .navbar .btn-default {
-    background: linear-gradient(90deg, var(--c1, #f6d365), var(--c2, #fda085) 51%, var(--c1, #f6d365)) var(--x, 0)/200%;
-    color: white;
+    background: linear-gradient(90deg, var(--c1, #f6d365), var(--c2, #fda085) 51%, var(--c1, #f6d365)) var(--x, 0)/200% !important;
+    color: white !important;
     box-shadow: 0 0 20px #eee;
     border-radius: 3rem !important;
     border-width: 2px !important;
@@ -129,6 +133,23 @@ body {
     #club {
       padding-bottom: 3rem;
       padding-top: 3rem; } }
+  #club .box {
+    background: linear-gradient(90deg, var(--c1, #f6d365), var(--c2, #fda085) 51%, var(--c1, #f6d365)) var(--x, 0)/200%;
+    transition: 1s; }
+    #club .box:hover {
+      --x: 100%; }
+  #club .box1 {
+    --c1: #f6d365;
+    --c2: #fda085; }
+  #club .box2 {
+    --c1: rgba(255,144,120,1);
+    --c2: rgba(255,142,210,1); }
+  #club .box3 {
+    --c1:rgba(70,211,255,1);
+    --c2: rgba(26,251,148,1); }
+  #club .box4 {
+    --c1: rgba(0,72,212,1);
+    --c2: rgba(209,51,255,1); }
   #club h1 {
     font-size: 36px; }
     @media (max-width: 768px) {
@@ -190,11 +211,13 @@ body {
   #about h4 {
     color: #616161;
     font-size: 20px;
-    width: 70%; }
+    width: 70%;
+    line-height: 1.618; }
     @media (max-width: 768px) {
       #about h4 {
         width: 90%;
-        font-size: 16px; } }
+        font-size: 16px;
+        line-height: 1.4; } }
   #about .box_medium {
     width: 100%;
     padding-left: 2rem;
@@ -230,7 +253,7 @@ body {
       border: 1px solid #fff; }
 
 #footer {
-  height: 375px;
+  min-height: 375px;
   background-color: #f0f0f0;
   margin-top: -130px;
   padding-bottom: 80px;
@@ -276,14 +299,15 @@ body {
     padding-top: 3rem;
     width: 90%;
     font-weight: 200;
-    padding-bottom: 6rem; }
+    padding-bottom: 6rem;
+    line-height: 1.618; }
     @media (max-width: 768px) {
       #main_team h4 {
         width: 100%;
         border-radius: 8px;
         font-size: 16px;
         text-align: center;
-        line-height: 28px;
+        line-height: 1.4;
         padding-top: 0.5rem;
         padding-bottom: 1rem; } }
   #main_team .margin {

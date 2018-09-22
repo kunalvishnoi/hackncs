@@ -11,3 +11,6 @@ function showPage() {
   $("#panel_left").addClass("panel_left");
         $("#panel_right").addClass("panel_right");
 }
+
+
+
